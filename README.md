@@ -34,7 +34,54 @@ It's highly recommended to secure your VPS. You can enable firewall, add 2FA, ad
 
 Now that we have "signed in" to our new user, we can refer to the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs. You will need to follow their docs from the "Basics" section all the way to the end of the "Node & CLI" sub-section in "Build and Run". This is a very simple process, just copy and paste.
 
-# Step 2: Organizing Cardano-node files.
+# Step 2: Setup Cardano-Node using CNTools.
+
+For this step, its best to go through the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs on your own to gain a full understanding. But I will quick list out the commands you need to run. 
+
+Make sure you are in your "home" directory:
+```
+cd
+```
+
+Download the pre-requisites scripts:
+```
+mkdir "$HOME/tmp";cd "$HOME/tmp"
+curl -sS -o prereqs.sh https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/prereqs.sh
+chmod 755 prereqs.sh
+```
+
+Run prereqs.sh:
+```
+./prereqs.sh
+```
+Then:
+```
+. "${HOME}/.bashrc"
+```
+This will generate the CNTools file structure for Cardano-Node.
+
+Next we need to clone the cardano-node github repo:
+```
+cd ~/git
+git clone https://github.com/input-output-hk/cardano-node
+cd cardano-node
+```
+Then fetch the lastest version (1.31.0) and build:
+```
+git fetch --tags --all
+git pull
+git checkout $(curl -s https://api.github.com/repos/input-output-hk/cardano-node/releases/latest | jq -r .tag_name)
+$CNODE_HOME/scripts/cabal-build-all.sh
+```
+Building the node will take anywhere from 30 minutes to 2 hours depending on your VPS.
+
+After build is finished, verify that the cardano-cli and node is working and running on 1.31.0:
+```
+cardano-cli version
+cardano-node version
+```
+
+# Step 3: Organizing Cardano-node files.
 Now that we have our cardano-node setup and it is fully synced. We can start generating the required payment, stake, and policy files. You do not have to organize the files the same way I do. I just prefer things to be tiddy.
 
 CD into your CNODE_HOME directory:
