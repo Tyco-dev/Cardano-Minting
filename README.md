@@ -9,3 +9,5 @@
 - [Contabo](https://contabo.com/en/) (What I prefer to use)
 - [AWS](https://aws.amazon.com/)
 - [Digital Ocean](https://www.digitalocean.com/)
+
+For this guide, I will be using Ubuntu 20.04
