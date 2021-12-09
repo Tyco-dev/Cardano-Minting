@@ -72,3 +72,15 @@ Now that we have a Tmux session, we need to export the cardano node "socket" so 
 To exit out of a tmux session and go back to the normal session, simply press:
 
 "Ctrl+b d"
+
+You can list out your current tmux sessions using the command:
+```
+tmux ls
+```
+
+Then to open an existing tmux session, like the one we just created...we run:
+```
+tmux a -t minting
+```
+
+and now, we are back in our minting shell.
