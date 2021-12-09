@@ -11,3 +11,5 @@
 - [Digital Ocean](https://www.digitalocean.com/)
 
 For this guide, I will be using Ubuntu 20.04
+
+Once you set up your VPS and retreive your login information, ssh into your vps.
