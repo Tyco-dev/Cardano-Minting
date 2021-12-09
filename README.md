@@ -28,5 +28,15 @@ Sign in to new user.
 ```
 sudo su - mint
 ```
+## Step 2: Secure your VPS.
+This will be just a basic setup of some simple yet effective things you can do to make your VPS more secure.
+
+Enable firewall (make sure to open port 22, or you wont be able to get back into your server).
+```
+sudo ufw allow proto tcp from any to any port 22
+sudo ufw enable
+```
+
+
 Now that we have "signed in" to our new user, we can refer to the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs. You will need to follow their docs from the "Basics" section all the way to the end of the "Node & CLI" sub-section in "Build and Run". This is a very simple process, just copy and paste.
 
