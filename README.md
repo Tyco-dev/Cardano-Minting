@@ -34,7 +34,7 @@ It's highly recommended to secure your VPS. You can enable firewall, add 2FA, ad
 
 Now that we have "signed in" to our new user, we can refer to the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs. You will need to follow their docs from the "Basics" section all the way to the end of the "Node & CLI" sub-section in "Build and Run". This is a very simple process, just copy and paste.
 
-# Setp 2: How to mint on Cardano.
+# Step 2: Organizing Cardano-node files.
 Now that we have our cardano-node setup and it is fully synced. We can start generating the required payment, stake, and policy files.
 
 CD into your CNODE_HOME directory:
