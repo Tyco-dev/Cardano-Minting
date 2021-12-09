@@ -1,6 +1,6 @@
 # Cardano minting guide. (Version 1.31.0)
 
-## Step 1: Set up Linux environment
+# Step 1: Set up Linux environment
 #### Hardware requirements:
 - Min 2 vCPU
 - Min 12gb of RAM (recommend 16gb)
@@ -12,6 +12,7 @@
 
 For this guide, I will be using Ubuntu 20.04
 
+#### Create "non-root" sudo user:
 1. Once you set up your VPS and retreive your login information, ssh into your VPS.
 ```
 ssh root@ip-address
@@ -33,8 +34,13 @@ It's highly recommended to secure your VPS. You can enable firewall, add 2FA, ad
 
 Now that we have "signed in" to our new user, we can refer to the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs. You will need to follow their docs from the "Basics" section all the way to the end of the "Node & CLI" sub-section in "Build and Run". This is a very simple process, just copy and paste.
 
-## Setp 2: How to mint on Cardano.
+# Setp 2: How to mint on Cardano.
 Now that we have our cardano-node setup and it is fully synced. We can start generating the required payment, stake, and policy files.
+
+CD into your CNODE_HOME directory:
+```
+cd $CNODE_HOME
+```
 
 To save on stress and time, I highly recommend using [Tmux](https://linuxize.com/post/getting-started-with-tmux/). 
 
