@@ -54,6 +54,8 @@ $CNODE_HOME/sockets
 ```
 Now, we don't want to have constantly keep export the socket everytime we want to run CLI commands...so there is an easy fix for this.
 
+#### Installing and Setting up Tmux
+
 To save on stress and time, I highly recommend using [Tmux](https://linuxize.com/post/getting-started-with-tmux/). 
 
 "tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window. It is useful for running more than one command-line program at the same time" https://en.wikipedia.org/wiki/Tmux
