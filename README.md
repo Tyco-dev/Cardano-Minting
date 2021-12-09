@@ -86,3 +86,14 @@ tmux a -t minting
 ```
 
 and now, we are back in our minting shell.
+
+### Exporting Node Socket
+
+As I stated above, we need to tell Cardano-node where the socket is so we can run the CLI commands.
+
+Make sure you are in the workdir we created earlier.
+```
+cd /opt/cardano/cnode/workdir
+# or
+cd cd $CNODE_HOME/workdir
+```
