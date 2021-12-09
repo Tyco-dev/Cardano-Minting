@@ -2,7 +2,7 @@
 
 ### Step 1: Set up Linux environment
 #### Hardware requirements:
--Min 2 vCPU
--Min 12gb of RAM (recommend 16gb)
--50gb+ of disk space
+- Min 2 vCPU
+- Min 12gb of RAM (recommend 16gb)
+- 50gb+ of disk space
 
