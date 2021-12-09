@@ -1,2 +1,1 @@
-# Cardano-Minting
-Cardano minting guide. (Version 1.31.0)
+##Cardano minting guide. (Version 1.31.0)
