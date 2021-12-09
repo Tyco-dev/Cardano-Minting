@@ -28,9 +28,5 @@ Sign in to new user.
 ```
 sudo su - mint
 ```
-Now that we have "signed in" to our new user, we need to run some updates on our server,
-```
-sudo apt-get update -y
-sudo apt-get upgrade -y
+Now that we have "signed in" to our new user, we can refer to the Guild Operators: [CNTools](https://cardano-community.github.io/guild-operators/) docs. You will need to follow their docs from the "Basics" section all the way to the end of the "Node & CLI" subsection in "Build and Run"
 
-```
