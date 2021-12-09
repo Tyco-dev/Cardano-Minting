@@ -16,3 +16,15 @@ Once you set up your VPS and retreive your login information, ssh into your VPS.
 ```
 ssh root@ip-address
 ```
+Create a "non-root" user.
+```
+sudo adduser mint
+```
+Add new user to "sudo" group.
+```
+sudo adduser mint sudo
+```
+Sign in to new user.
+```
+sudo su - mint
+```
