@@ -44,7 +44,15 @@ cd $CNODE_HOME
 Create a new directory called "workdir". This is where we will put all of our keys, policy files, and metadata.
 ```
 mkdir workdir
+cd workdir
 ```
+Since workdir is the level where we will be running Cardano CLI commands, we need to tell the node where the socket is. CNTools places the socket in:
+```
+/opt/cardano/cnode/sockets
+#or
+$CNODE_HOME/sockets
+```
+Now, we don't want to have constantly keep export the socket everytime we want to run CLI commands...so there is an easy fix for this.
 
 To save on stress and time, I highly recommend using [Tmux](https://linuxize.com/post/getting-started-with-tmux/). 
 
@@ -59,4 +67,8 @@ sudo apt install tmux
 tmux new -s minting
 ```
 
-Now that we have a Tmux session, we need to export the cardano node "socket" so we are able to run cardano CLI commands.
+Now that we have a Tmux session, we need to export the cardano node "socket" so we are able to run cardano CLI commands and also never have to export the socket again since the tmux "minting" session will always be live. 
+
+To exit out of a tmux session and go back to the normal session, simply press:
+
+"Ctrl+b d"
