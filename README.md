@@ -28,3 +28,9 @@ Sign in to new user.
 ```
 sudo su - mint
 ```
+Now that we have "signed in" to our new user, we need to run some updates on our server,
+```
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+```
