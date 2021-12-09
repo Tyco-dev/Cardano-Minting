@@ -36,6 +36,17 @@ Now that we have "signed in" to our new user, we can refer to the Guild Operator
 ## Setp 2: How to mint on Cardano.
 Now that we have our cardano-node setup and it is fully synced. We can start generating the required payment, stake, and policy files.
 
-To save on stress and time, I highly recommend using Tmux. 
+To save on stress and time, I highly recommend using [Tmux](https://linuxize.com/post/getting-started-with-tmux/). 
 
 "tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window. It is useful for running more than one command-line program at the same time" https://en.wikipedia.org/wiki/Tmux
+
+1. Install Tmux on VPS:
+```
+sudo apt install tmux
+```
+2. Create a named Tmux session:
+```
+tmux new -s minting
+```
+
+Now that we have a Tmux session, we need to export the cardano node "socket" so we are able to run cardano CLI commands.
